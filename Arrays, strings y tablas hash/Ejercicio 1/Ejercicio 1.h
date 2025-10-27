@@ -4,6 +4,7 @@ ejemplo:
 "abcde" -> true
 "abcded" -> false
 */
+
 #include <string>
 #include <unordered_set> // para usar una tabla hash con solo clave (sin valor asociado)
 

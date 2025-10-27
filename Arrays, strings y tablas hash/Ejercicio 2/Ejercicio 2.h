@@ -36,6 +36,9 @@ class Sum {
         
         // optimizada -> O(n)
         vector<int> two_sum2(vector<int> &array, int target) {
+            // Caso en el que el array esta vacio o tiene menos de 2 numeros (no se puede hacer la suma)
+            if(array.empty() || array.size() < 2) return {};
+
             int complement;
             // tabla hash para buscar las soluciones {complemento, indice} = {target - num, indice}
             unordered_map<int, int> complements;

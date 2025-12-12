@@ -2,8 +2,6 @@
 #include "../../catch.hpp"
 #include "Ejercicio 3.h"
 
-#include <vector>
-#include <string>
 #include <algorithm> // Necesario para is_permutation
 
 using namespace std;

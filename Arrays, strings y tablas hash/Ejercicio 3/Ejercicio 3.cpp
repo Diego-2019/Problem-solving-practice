@@ -12,7 +12,7 @@ using namespace std;
 Comprueba si la lista de resultados 'anagrams' contiene un grupo
 que sea una permutación del grupo 'group' esperado.
 */
-bool containsGroup(vector<vector<string>>& anagrams, vector<string>& group) {
+bool containsGroup(const vector<vector<string>>& anagrams, const vector<string>& group) {
     
     for (auto& g : anagrams) {
         if (g.size() == group.size() && is_permutation(g.begin(), g.end(), group.begin())) {
